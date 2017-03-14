@@ -1,8 +1,8 @@
 
 
 /* VARIABLES GLOBALES*/
-var n1, n2, resultado, operacion;
-var codigo = 5;
+var n1, n2, resultado, operacion, codigo;
+
 
 /*FUNCIONES*/
 
