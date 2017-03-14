@@ -6,44 +6,45 @@
 
 
 
-function pedirOperacion () {
-    
-    var operacion = prompt ("Introduce la operación\n '+' '-' '*' '/' '%'")
-    
+var n1, n2, resultado, operacion;
+
+
+function pedirOperacion() {
+
+    operacion = prompt("Introduce la operación\n '+' '-' '*' '/' '%'")
     return operacion;
-    
+
 }
-
-
 
 function pedirNumero() {
 
-    var n1 = prompt("Introduce el numero 1: ");
-    var n2 = prompt("introduce el numero 2: ");
+    n1 = prompt("Introduce el numero 1: ");
+    n2 = prompt("introduce el numero 2: ");
 
 }
 
-function suma(n1, n2) {
+function calculadora(op, num1, num2) {
 
-    return n1 + n2;
+    if (op === "+")
+        resultado = num1 + num2;
+    if (op === "-")
+        resultado = num1 - num2;
+    if (op === "/")
+        resultado = num1 / num2;
+    if (op === "*")
+        resultado = num1 * num2;
+    if (op === "%")
+        resultado = num1 % num2;
+    else (alert("Operación no aceptada"));
+
+    return resultado;
+
 }
-
-function resta(n1, n2) {
-    return n1 - n2;
-}
-
-function multiplicacion(n1, n2) {
-    return n1 * n2;
-}
-
-function division(n1, n2) {
-    return n1 / n2;
-}
-
-function modulo(n1, n2) {
-    return n1 % n2;
-}
-
 
 pedirOperacion();
 pedirNumero();
+calculadora(operacion, n1, n2);
+
+alert("El resultado de: " + n1 + " " + operacion + " " + n2 + " es: " + resultado);
+
+
