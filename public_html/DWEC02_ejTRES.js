@@ -6,6 +6,11 @@ var n1, n2, resultado, operacion, codigo;
 
 /*FUNCIONES*/
 
+/**
+ * Solicita y guarda la operación introducida por el usuario.
+ * 
+ * @returns {operacion}
+ */
 function pedirOperacion() {
 
     operacion = prompt("Introduce la operación\n '+' '-' '*' '/' '%'");
@@ -21,12 +26,26 @@ function pedirOperacion() {
 
 }
 
+/**
+ * Guarda en las variables n1, n2, el numero introducido por el usuario.
+ * 
+ * @returns {undefined}
+ */
 function pedirNumero() {
 
     n1 = prompt("Introduce el numero 1: ");
     n2 = prompt("introduce el numero 2: ");
 
 }
+
+/**
+ * Realiza los calculos en funcion de la operación seleccionada
+ * 
+ * @param {type} op
+ * @param {type} num1
+ * @param {type} num2
+ * @returns {Number|resultado|calculadora.num1|calculadora.num2|num1|num2}
+ */
 
 function calculadora(op, num1, num2) {
 
